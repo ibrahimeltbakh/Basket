@@ -9,7 +9,7 @@ export default function Navbar() {
   ];
 
   return (
-    <header className="flex justify-between px-20 py-4 bg-green-900 text-gray-300 mb-8">
+    <header className="flex justify-between px-20 py-4 bg-green-900 text-gray-300">
       <section>
         <Link className="hover:text-white rounded-md px-3 py-2 font-medium">
           Logo

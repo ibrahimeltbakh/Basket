@@ -1,5 +1,23 @@
 @import "tailwindcss";
 
+@layer components
+{
+    .swiper-button-prev,
+    .swiper-button-next
+    {
+        color : #202435 !important;
+        background-color: #fff;
+        padding: 20px;
+        border-radius: 100%;
+    }
+
+    .swiper-button-prev::after,
+    .swiper-button-next::after
+    {
+        font-size: 25px !important;
+    }
+}
+
 /* :root {
   font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;
