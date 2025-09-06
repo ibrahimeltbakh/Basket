@@ -15,6 +15,7 @@ function App() {
         { path: "about", element: <About /> },
         { path: "*", element: <NotFound /> },
       ],
+      
     },
   ]);
 
