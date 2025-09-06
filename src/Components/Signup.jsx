@@ -33,17 +33,29 @@ function Signup() {
     return newErrors;
   };
 
+
   const handleSubmit = (e) => {
     e.preventDefault();
     const validationErrors = validate();
     setErrors(validationErrors);
 
     if (Object.keys(validationErrors).length === 0) {
-      localStorage.setItem(
-        "user",
-        JSON.stringify({ username, email, password })
-      );
-      navigate("/Login"); // redirect to login page
+      // Get existing users or empty array
+      const existingUsers = JSON.parse(localStorage.getItem("users")) || [];
+
+      //  Check if username already exists
+      if (existingUsers.find((user) => user.username === username)) {
+        alert("Username already taken!");
+        return;
+      }
+
+      // Add new user
+      const newUser = { username, email, password };
+      existingUsers.push(newUser);
+
+      localStorage.setItem("users", JSON.stringify(existingUsers));
+
+      navigate("/login");
     }
   };
 

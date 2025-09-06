@@ -24,13 +24,14 @@ function Login() {
     setErrors(validationErrors);
 
     if (Object.keys(validationErrors).length === 0) {
-      const storedUser = JSON.parse(localStorage.getItem("user"));
+      const storedUsers = JSON.parse(localStorage.getItem("users")) || [];
 
-      if (
-        storedUser &&
-        storedUser.username === username &&
-        storedUser.password === password
-      ) {
+      const foundUser = storedUsers.find(
+        (u) => u.username === username && u.password === password
+      );
+
+      if (foundUser) {
+        localStorage.setItem("currentUser", JSON.stringify(foundUser)); // keep login session
         navigate("/home"); // redirect to home page
       } else {
         alert("Invalid username or password!");
