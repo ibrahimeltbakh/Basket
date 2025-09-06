@@ -6,23 +6,21 @@ import blog2 from "../assets/blog2.jpg";
 import sidebar from "../assets/sidebar.png";
 import { CiCalendar } from "react-icons/ci";
 import { FiUser } from "react-icons/fi";
-import { useState } from 'react'
 
 
 
 
 function Blog() {
-  const [tags, setTags] = useState([
-    { title: 'advertising', id: 1 },
-    { title: 'best', id: 2 },
-    { title: 'grocery', id: 3 },
-    { title: 'summary', id: 4 },
-    { title: 'organic', id: 5 },
-    { title: 'sharp', id: 6 },
-    { title: 'website', id: 7 },
-    { title: 'visual', id: 8 }
-  ])
-
+  const tags = [
+      { title: 'advertising', id: 1 },
+      { title: 'best', id: 2 },
+      { title: 'grocery', id: 3 },
+      { title: 'summary', id: 4 },
+      { title: 'organic', id: 5 },
+      { title: 'sharp', id: 6 },
+      { title: 'website', id: 7 },
+      { title: 'visual', id: 8 }
+  ]
   return (
     <div className='min-h-screen bg-gray-50'>
       <div className='max-w-7xl mx-auto px-4 py-8'>
@@ -134,14 +132,14 @@ function Blog() {
             <div className='bg-white rounded-lg shadow-sm p-6'>
               <h3 className='text-lg font-bold text-gray-900 mb-4'>TAGS</h3>
               <div className="flex flex-wrap gap-2" >
-              {tags.map((tag) => (
-                <span key={tag.id} className="px-3 py-1 bg-gray-100 text-gray-700 text-sm rounded hover:bg-blue-100 hover:text-blue-700 transition-colors cursor-pointer">{tag.title}</span>
-              ))}
+                {tags.map((tag) => (
+                  <span key={tag.id} className="px-3 py-1 bg-gray-100 text-gray-700 text-sm rounded hover:bg-blue-100 hover:text-blue-700 transition-colors cursor-pointer">{tag.title}</span>
+                ))}
+              </div>
             </div>
           </div>
         </div>
       </div>
-    </div>
     </div >
   )
 }
