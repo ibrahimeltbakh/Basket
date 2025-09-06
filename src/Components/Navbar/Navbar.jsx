@@ -1,12 +1,9 @@
 
 import { Link } from "react-router";
-import { v4 as uuidv4 } from "uuid";
+
 
 export default function Navbar() {
-  let myPages = [
-    { name: "Home", path: "" },
-    { name: "About", path: "about" },
-  ];
+
 
   return (
     <header className="flex justify-between">
