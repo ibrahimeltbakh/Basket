@@ -72,7 +72,10 @@ const [count, setcount]=useState(0)
           </div>
           <div className="flex items-center space-x-2">
             <span className="text-sm font-semibold">$0.00</span>
-            <FaShoppingCart className="text-gray-600 text-2xl cursor-pointer relative" />
+            <Link to='/cart' title="Cart">
+              <FaShoppingCart className="text-gray-600 text-2xl cursor-pointer relative" />
+            </Link>
+
             <span className="absolute text-xs bg-red-500 text-white rounded-full px-2 -mt-6 ml-4">
               {count}
             </span>

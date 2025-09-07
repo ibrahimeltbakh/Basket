@@ -8,7 +8,7 @@ export default function Paymoney() {
 
                         <div class="text-center mb-8">
                             <h2 class="text-2xl font-bold text-gray-900">Checkout</h2>
-                            <p class="mt-2 text-gray-600">Total: $58.98</p>
+                            <p class="mt-2 text-gray-600">Total: $8.99</p>
                         </div>
 
                         <div class="mb-6">
