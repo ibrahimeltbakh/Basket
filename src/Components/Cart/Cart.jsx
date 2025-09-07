@@ -2,20 +2,10 @@
 import imgCard from '../../assets/1.webp'
 import { Link } from 'react-router-dom'
 
-// import useGetCartProducts from '../../Hooks/cart/useGetCartProducts'
-// import useGetCartProducts from '../../Hooks/cart/useGetCartProducts'
-
 export default function Cart() {
-//     const { data: cartProducts, isLoading, isError, error } = useGetCartProducts();
-
-//     if (isLoading) return <div>Loading...</div>;
-//     if (isError) return <div>{error.message}</div>;
-
-// console.log(cartProducts);
 
     return (
         <>        
-        
             <div className=' max-w-5xl mx-auto text-sm text-gray-500 p-4'>
                 
                 {/* product 1 */}

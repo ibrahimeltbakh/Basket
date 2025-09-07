@@ -21,7 +21,6 @@ function App() {
         { path: "cart", element:<Cart />},
         { path: "Checkout", element:<Checkout />},
         { path: "Paymoney", element:<Paymoney />},
-
         { path: "*", element: <NotFound /> },
       ],
       
