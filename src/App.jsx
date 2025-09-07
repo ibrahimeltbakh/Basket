@@ -1,5 +1,5 @@
 import "./App.css";
-import Home from "./Pages/Home";
+import Home from "./Pages/Home/Home";
 import About from "./Pages/About";
 import { createBrowserRouter, RouterProvider } from "react-router";
 import Layout from "./Components/Layout/Layout.jsx";
@@ -15,6 +15,7 @@ function App() {
         { path: "about", element: <About /> },
         { path: "*", element: <NotFound /> },
       ],
+      
     },
   ]);
 

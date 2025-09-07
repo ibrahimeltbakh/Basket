@@ -2,7 +2,7 @@
 import { Link } from "react-router";
 import { GoChevronDown } from "react-icons/go";
 import { LiaHandPaper } from "react-icons/lia";
-export default function Header() {
+export default function Navbar() {
 
 
   return (
