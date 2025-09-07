@@ -2,7 +2,7 @@ import "./App.css";
 import Home from "./Pages/Home";
 import About from "./Pages/About";
 import { createBrowserRouter, RouterProvider } from "react-router";
-import Layout from "./Components/Layout/layout";
+import Layout from "./Components/Layout/Layout.jsx";
 import NotFound from "./Components/NotFound/NotFound";
 
 function App() {
