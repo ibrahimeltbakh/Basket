@@ -15,12 +15,12 @@ import article2 from '../../assets/images/article2.png'
 import article3 from '../../assets/images/article3.png'
 import promo1 from '../../assets/images/promo1.jpg'
 import promo2 from '../../assets/images/promo2.png'
-import Category from '../../components/Category/Category';
-import DealProduct from '../../components/DealProduct/DealProduct';
-import Product from '../../components/Product/Product';
-import Discount from '../../components/Discount/Discount';
-import Article from '../../components/Article/Article';
-import Promo from '../../components/Promo/Promo';
+import Category from '../../Components/Category/Category';
+import DealProduct from '../../Components/DealProduct/DealProduct';
+import Product from '../../Components/Product/Product';
+import Discount from '../../Components/Discount/Discount';
+import Article from '../../Components/Article/Article';
+import Promo from '../../Components/Promo/Promo';
 import useGetProducts from "../../Hooks/products/useGetProducts";
 import useGetCategories from "../../Hooks/categories/useGetCategories";
 
