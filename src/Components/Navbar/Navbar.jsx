@@ -7,7 +7,36 @@ import { IoSearch } from "react-icons/io5";
 import { useState } from "react";
 export default function Navbar() {
 const [count, setcount]=useState(0)
-
+const linkes=[
+  {
+    name:'Home',
+    path:'/',
+  },
+  {
+    name:'About',
+    path:'/about',
+  },
+  {
+    name:'Contact',
+    path:'/contact',
+  },
+  {
+    name:'Blog',
+    path:'/blog',
+  },
+  {
+    name:'Cart',
+    path:'/cart',
+  },
+  {
+    name:'Paymoney',
+    path:'/paymoney',
+  },
+  {
+    name:'Checkout',
+    path:'/checkout',
+  },
+]
   return (
     <header className="w-full">
     <section className="flex justify-between text-[15px]">
@@ -67,12 +96,22 @@ const [count, setcount]=useState(0)
 
         {/* Icons */}
         <div className="flex items-center space-x-6 mx-3">
+
+           <Link to='/signup'>Sign in</Link>
+           <Link to='/login'>Login up</Link>
+          <div className="flex items-center space-x-2">
+            <span className="text-sm font-semibold">$0.00</span>
+            <Link to={linkes[6].path}>
+            <FaShoppingCart className="text-gray-600 text-2xl cursor-pointer relative" />
+            </Link>
+
      
           <div className="flex items-center space-x-2">
             <span className="text-sm font-semibold">$0.00</span>
             <Link to='/cart' title="Cart">
               <FaShoppingCart className="text-gray-600 text-2xl cursor-pointer relative" />
             </Link>
+
 
             <span className="absolute text-xs bg-red-500 text-white rounded-full px-2 -mt-6 ml-4">
               {count}
@@ -91,13 +130,12 @@ const [count, setcount]=useState(0)
           </span>
         </button>
         <nav className="ml-8 space-x-6 font-medium hidden md:flex">
-          <a href="/">Home</a>
-          <a href="/shop">Shop</a>
-          <a href="#">Meats & Seafood</a>
-          <a href="#">Bakery</a>
-          <a href="#">Beverages</a>
-          <a href="#">Blog</a>
-          <a href="/contact">Contact</a>
+          {
+            linkes.map((item, index)=>{
+              return <Link key={index} to={item.path}>{item.name}</Link>
+            })
+          }
+         
         </nav>
       </div>
     </section>
