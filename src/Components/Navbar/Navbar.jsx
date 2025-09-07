@@ -105,7 +105,7 @@ const linkes=[
             <FaShoppingCart className="text-gray-600 text-2xl cursor-pointer relative" />
             </Link>
 
-     
+     </div>
           <div className="flex items-center space-x-2">
             <span className="text-sm font-semibold">$0.00</span>
             <Link to='/cart' title="Cart">
