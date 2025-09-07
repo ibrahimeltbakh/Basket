@@ -1,3 +1,5 @@
+// icon fontawesome
+import '../node_modules/@fortawesome/fontawesome-free/css/all.min.css';
 import "./App.css";
 import Home from "./Pages/Home/Home";
 import About from "./Pages/About";
