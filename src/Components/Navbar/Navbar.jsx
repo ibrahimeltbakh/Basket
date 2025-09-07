@@ -1,5 +1,6 @@
 
-import { Link } from "react-router";
+import React from "react";
+import { Link } from "react-router-dom";
 import { GoChevronDown } from "react-icons/go";
 import { LiaHandPaper } from "react-icons/lia";
 import { FaUser, FaShoppingCart, FaHeart, FaBalanceScale } from "react-icons/fa";
@@ -38,6 +39,33 @@ export default function Navbar() {
     },
   ]
   return (
+    <header className="flex justify-between px-20 py-4 bg-green-900 text-gray-300 mb-8">
+      <section>
+        <Link
+          className="hover:text-white rounded-md px-3 py-2 font-medium"
+          to="/">
+          Logo
+        </Link>
+      </section>
+
+      <nav>
+        {myPages.map((page) => (
+          <Link
+            className="hover:text-white rounded-md px-3 py-2 font-medium"
+            to={page.path}
+            key={uuidv4()}>
+            {page.name}
+          </Link>
+        ))}
+      </nav>
+
+      <section>
+        <Link
+          className="hover:text-white rounded-md px-3 py-2 font-medium"
+          to="cart">
+          Cart - 2
+        </Link>
+      </section>
     <header className="w-full">
       <section className="flex justify-between text-[15px]">
         <div className='w-full'>
@@ -73,6 +101,7 @@ export default function Navbar() {
           </div>
           <hr />
         </div>
+
       </section>
 
 
@@ -84,6 +113,7 @@ export default function Navbar() {
             <img className="w-[200px] h-[170px]" src='../../../public/logo.jpg' alt="logo" />
           </div>
 
+  
           {/* Search Bar */}
           <div className="flex items-center w-1/2 border rounded-lg px-3 py-2 mx-3 ">
             <input
@@ -112,7 +142,6 @@ export default function Navbar() {
           </div>
         </div>
 
-      {/* 🔹 Menu */}
       <div className="flex items-center px-6 pb-5 justify-between">
         <button className="bg-[#35AFA0] px-4 py-2 rounded-full flex items-center space-x-2 relative text-white">
           <span className="text-lg">☰</span>
@@ -131,7 +160,9 @@ export default function Navbar() {
         </nav>
       </div>
     </section>
+
    
     </header >
+
   );
 }
