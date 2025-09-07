@@ -1,8 +1,10 @@
+// icon fontawesome
+import '../node_modules/@fortawesome/fontawesome-free/css/all.min.css';
 import "./App.css";
-import Home from "./Pages/Home";
+import Home from "./Pages/Home/Home";
 import About from "./Pages/About";
 import { createBrowserRouter, RouterProvider } from "react-router";
-import Layout from "./Components/Layout/layout";
+import Layout from "./Components/Layout/Layout.jsx";
 import NotFound from "./Components/NotFound/NotFound";
 
 function App() {
@@ -15,6 +17,7 @@ function App() {
         { path: "about", element: <About /> },
         { path: "*", element: <NotFound /> },
       ],
+      
     },
   ]);
 
