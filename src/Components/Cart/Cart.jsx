@@ -34,7 +34,7 @@ export default function Cart() {
                     </div>
                     <div className='flex flex-col sm:flex-row gap-2 items-start sm:items-center'>
                         <p className="text-lg sm:text-2xl font-semibold">Total Price:</p>
-                        <p className="text-lg sm:text-2xl font-semibold">$21.98</p>
+                        <p className="text-lg sm:text-2xl font-semibold">$8.99</p>
                     </div>
                     
                 </div>

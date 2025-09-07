@@ -96,6 +96,7 @@ const linkes=[
 
         {/* Icons */}
         <div className="flex items-center space-x-6 mx-3">
+
            <Link to='/signup'>Sign in</Link>
            <Link to='/login'>Login up</Link>
           <div className="flex items-center space-x-2">
@@ -103,6 +104,15 @@ const linkes=[
             <Link to={linkes[6].path}>
             <FaShoppingCart className="text-gray-600 text-2xl cursor-pointer relative" />
             </Link>
+
+     
+          <div className="flex items-center space-x-2">
+            <span className="text-sm font-semibold">$0.00</span>
+            <Link to='/cart' title="Cart">
+              <FaShoppingCart className="text-gray-600 text-2xl cursor-pointer relative" />
+            </Link>
+
+
             <span className="absolute text-xs bg-red-500 text-white rounded-full px-2 -mt-6 ml-4">
               {count}
             </span>
