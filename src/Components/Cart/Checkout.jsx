@@ -92,7 +92,7 @@ export default function Checkout() {
                             </div>
 
                             <div className=' w-fit'>
-                                <span className="font-medium">$12.99</span>
+                                <span className="font-medium">$8.99</span>
                             </div>
                         </div>
 
@@ -100,9 +100,9 @@ export default function Checkout() {
                         <div className='p-2 max-w-[800px] '>
                             <div className="flex justify-between items-center pt-4 ">
                                 <p className="font-medium">Subtotal : 
-                                    <span className=""> 2 </span>items
+                                    <span className=""> 1 </span>items
                                 </p>
-                                <span className=" font-semibold">$82.97</span>
+                                <span className=" font-semibold">$8.99</span>
                             </div>
 
                             <div className="flex justify-between items-center pt-4 ">
@@ -113,7 +113,7 @@ export default function Checkout() {
                             <div className="flex justify-between items-center py-7 ">
                                 <span className="text-2xl font-bold">Total </span>
                                 <span className=" font-semibold">
-                                    <span className="text-gray-500">USD </span> $82.97
+                                    <span className="text-gray-500">USD </span> $8.99
                                 </span>
                             </div>
 
