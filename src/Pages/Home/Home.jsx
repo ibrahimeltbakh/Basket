@@ -1,6 +1,7 @@
 import 'swiper/css';
 import 'swiper/css/navigation';
 import "swiper/css/pagination";
+import './Home.css';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Navigation , Autoplay , Pagination } from 'swiper/modules';
 import { MdOutlineArrowRightAlt } from "react-icons/md";
