@@ -67,9 +67,7 @@ const [count, setcount]=useState(0)
 
         {/* Icons */}
         <div className="flex items-center space-x-6 mx-3">
-          <div className="border rounded-full p-2">
-          <FaUser className="text-gray-600 text-xl cursor-pointer" />
-          </div>
+     
           <div className="flex items-center space-x-2">
             <span className="text-sm font-semibold">$0.00</span>
             <FaShoppingCart className="text-gray-600 text-2xl cursor-pointer relative" />
